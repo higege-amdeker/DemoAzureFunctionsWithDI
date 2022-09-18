@@ -1,6 +1,4 @@
-using DemoAzureFunctionsWithDI.Demos;
-
-namespace DemoAzureFunctionsWithDI;
+namespace DemoAzureFunctionsWithDI.Demos;
 
 /// <summary>
 /// Http Request ‚Å Demo ‚ðŽæ“¾‚·‚é API
