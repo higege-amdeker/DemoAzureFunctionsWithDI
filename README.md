@@ -1,9 +1,6 @@
 # DemoAzureFunctionsWithDI
 
-Azure Functions に Dependency Injection を導入するデモです。
-
-Startup クラスで依存性注入を設定します。
-コンストラクタで適切な依存関係が構築されます。
+Azure Functions に Dependency Injection を導入するデモです。（.NET 6）
 
 以下の API を提供します。
 - Demo データの取得
@@ -11,6 +8,15 @@ Startup クラスで依存性注入を設定します。
 以下の依存性切り替えを想定します。
 - Azure Table に保管されるデータ
 - テスト用のモックアップデータ
+
+## テンプレートプロジェクトからの主な変更点
+- Startup クラスで依存性注入を設定
+  - コンストラクタで適切な依存関係が構築されます。
+- global using を有効化
+
+## 参考
+.NET Azure Functions で依存関係の挿入を使用する - Microsoft Docs
+https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-dotnet-dependency-injection
 
 ---
 
