@@ -12,6 +12,6 @@ internal class Startup : FunctionsStartup
     {
         // データベース接続先を切り替えます
         builder.Services.AddScoped<IDemoRepository, AzureTableDemoRepository>();
-        //builder.Services.AddScoped<IDemoRepository, SqldatabaseDemoRepository>();
+        //builder.Services.AddScoped<IDemoRepository, MockDemoRepository>();
     }
 }

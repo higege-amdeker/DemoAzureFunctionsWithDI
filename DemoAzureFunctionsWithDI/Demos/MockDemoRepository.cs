@@ -3,14 +3,14 @@
 /// <summary>
 /// SQL Database の Demo へのデータアクセスを実現します
 /// </summary>
-public class SqldatabaseDemoRepository : IDemoRepository
+public sealed class MockDemoRepository : IDemoRepository
 {
     /// <inheritdoc/>
     public async Task<Demo?> GetAsync()
     {
         Demo demo = new(
             "SqlDatabaseDemo",
-            "This data was taken from SQL Database.");
+            "This data was taken from Mockup Database.");
 
         return await Task.FromResult(demo);
     }
